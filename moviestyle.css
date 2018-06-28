@@ -1,0 +1,125 @@
+/* Font */
+
+@font-face {
+    font-family: TheSansSemiBold;
+    src: url(TheSansC4s/TheSansC4s-6_SemiBold.otf);
+}
+
+@font-face {
+    font-family: TheSansBlack;
+    src: url(TheSansC4s/TheSansC4s-9_Black.otf);
+}
+
+
+/* Body */
+
+body {
+    font-family: 'TheSansSemiBold';
+    font-variant: small-caps;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+/* Movies */
+
+.static {
+	position: absolute;
+}
+
+.static:hover {
+	opacity: 0;
+}
+
+
+
+.movies {
+
+
+    width: 100%;
+    height: auto;
+
+    transition: filter .1s ease-in-out;
+    padding: 1%;
+}
+
+#movie1 {
+    top: 12vh;
+    float: left;
+    left: 0.5vw;
+    position: absolute;
+}
+
+#movie2 {
+    top: 12vh;
+    float: right;
+    right: 0.5vw;
+    position: absolute;
+}
+
+#movie3 {
+    top: 71.5vh;
+    float: left;
+    left: 0.5vw;
+    position: absolute;
+}
+
+#movie4 {
+    top: 71.5vh;
+    float: right;
+    right: 0.5vw;
+    position: absolute;
+}
+
+#movie5 {
+    top: 130vh;
+    float: left;
+    left: 0.5vw;
+    position: absolute;
+}
+
+
+
+
+/* Navigation */
+
+.navbar {
+    background-color: white;
+    max-height: 60px;
+    min-height: 60px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 3vh;
+    transform: translateY(-50%);
+    z-index: 1;
+    
+
+}
+
+#nav {
+    list-style-type: none;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+li {
+    display: inline-block;
+    padding-right: 30px;
+
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: transform .2s; /* Animation */
+    
+}
+
+.navbar a:hover {
+    transform: scale(1.2); /* zoom */
+}
